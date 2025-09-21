@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="300" viewBox="0 0 400 300">
+  <rect width="400" height="300" fill="#10b981"/>
+  <rect x="50" y="200" width="300" height="50" fill="#22c55e"/>
+  <circle cx="100" cy="150" r="30" fill="#eab308"/>
+  <rect x="150" y="120" width="20" height="80" fill="#65a30d"/>
+  <rect x="250" y="120" width="20" height="80" fill="#65a30d"/>
+  <text x="200" y="250" text-anchor="middle" fill="white" font-size="24" font-family="Arial">Agriculture</text>
+  <text x="200" y="280" text-anchor="middle" fill="white" font-size="14" font-family="Arial">Placeholder Image</text>
+</svg>

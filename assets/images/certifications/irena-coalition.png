@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="150" height="80" viewBox="0 0 150 80">
+  <rect width="150" height="80" fill="white" stroke="#1e40af" stroke-width="2"/>
+  <text x="75" y="25" text-anchor="middle" fill="#1e40af" font-size="12" font-family="Arial" font-weight="bold">IRENA</text>
+  <text x="75" y="40" text-anchor="middle" fill="#1e40af" font-size="10" font-family="Arial">Coalition</text>
+  <text x="75" y="55" text-anchor="middle" fill="#64748b" font-size="8" font-family="Arial">International Renewable</text>
+  <text x="75" y="65" text-anchor="middle" fill="#64748b" font-size="8" font-family="Arial">Energy Agency</text>
+</svg>

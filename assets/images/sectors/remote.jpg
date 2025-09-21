@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="300" viewBox="0 0 400 300">
+  <rect width="400" height="300" fill="#0ea5e9"/>
+  <polygon points="100,200 150,150 200,200 250,150 300,200 400,200 400,300 0,300" fill="#22c55e"/>
+  <rect x="180" y="160" width="40" height="40" fill="#92400e"/>
+  <polygon points="200,160 180,140 220,140" fill="#dc2626"/>
+  <text x="200" y="250" text-anchor="middle" fill="white" font-size="20" font-family="Arial">Remote Communities</text>
+  <text x="200" y="280" text-anchor="middle" fill="white" font-size="14" font-family="Arial">Placeholder Image</text>
+</svg>

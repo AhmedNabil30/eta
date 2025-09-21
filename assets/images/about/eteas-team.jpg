@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="500" viewBox="0 0 800 500">
+  <rect width="800" height="500" fill="#1e40af"/>
+
+  <!-- Team silhouettes -->
+  <circle cx="200" cy="180" r="30" fill="white" opacity="0.8"/>
+  <rect x="170" y="220" width="60" height="60" rx="30" fill="white" opacity="0.8"/>
+
+  <circle cx="350" cy="180" r="30" fill="white" opacity="0.8"/>
+  <rect x="320" y="220" width="60" height="60" rx="30" fill="white" opacity="0.8"/>
+
+  <circle cx="500" cy="180" r="30" fill="white" opacity="0.8"/>
+  <rect x="470" y="220" width="60" height="60" rx="30" fill="white" opacity="0.8"/>
+
+  <circle cx="650" cy="180" r="30" fill="white" opacity="0.8"/>
+  <rect x="620" y="220" width="60" height="60" rx="30" fill="white" opacity="0.8"/>
+
+  <!-- Background elements -->
+  <rect x="50" y="350" width="700" height="100" fill="#3b82f6" opacity="0.6"/>
+
+  <text x="400" y="400" text-anchor="middle" fill="white" font-size="32" font-family="Arial" font-weight="bold">ETEAS ENERGY TEAM</text>
+  <text x="400" y="430" text-anchor="middle" fill="white" font-size="18" font-family="Arial">Leading Egypt's Renewable Energy Future</text>
+</svg>

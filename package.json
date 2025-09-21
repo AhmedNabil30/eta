@@ -1,0 +1,38 @@
+{
+  "name": "eteas-website",
+  "version": "1.0.0",
+  "description": "ETEAS Energy official website - Renewable energy solutions in Egypt",
+  "main": "index.html",
+  "scripts": {
+    "build": "npm run build:css && npm run build:js",
+    "build:css": "postcss assets/css/main.css -o assets/css/main.min.css --map",
+    "build:js": "uglifyjs assets/js/main.js -o assets/js/main.min.js --source-map",
+    "serve": "python3 -m http.server 8000",
+    "test": "lighthouse http://localhost:8000 --output=html --output-path=./lighthouse-report.html",
+    "validate": "html-validate *.html",
+    "optimize": "imagemin assets/images/**/* --out-dir=assets/images/optimized/"
+  },
+  "keywords": [
+    "renewable energy",
+    "wind turbines",
+    "solar energy",
+    "hybrid systems",
+    "Egypt",
+    "ETEAS",
+    "Ryse Energy"
+  ],
+  "author": "ETEAS Energy",
+  "license": "Proprietary",
+  "devDependencies": {
+    "autoprefixer": "^10.4.16",
+    "cssnano": "^6.0.1",
+    "html-validate": "^8.5.0",
+    "imagemin": "^8.0.1",
+    "imagemin-webp": "^7.0.0",
+    "lighthouse": "^11.3.0",
+    "postcss": "^8.4.31",
+    "postcss-cli": "^10.1.0",
+    "uglify-js": "^3.17.4"
+  }
+}
+

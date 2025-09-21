@@ -1,0 +1,587 @@
+/* ============================================
+   ETEAS Energy - Responsive Styles
+   Mobile-first responsive design
+   ============================================ */
+
+/* Mobile First - Base styles are for mobile */
+
+/* ============================================
+   Small devices (576px and up)
+   ============================================ */
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+
+  .hero-title {
+    font-size: var(--font-size-5xl);
+  }
+
+  .hero-stats {
+    flex-direction: row;
+  }
+
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .btn-large {
+    width: auto;
+  }
+}
+
+/* ============================================
+   Medium devices (768px and up)
+   ============================================ */
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+
+  /* Typography scaling */
+  .section-title {
+    font-size: var(--font-size-5xl);
+  }
+
+  .hero-title {
+    font-size: var(--font-size-6xl);
+  }
+
+  /* Grid improvements */
+  .services-grid {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+
+  .sectors-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .projects-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-8);
+  }
+
+  .project-card.featured {
+    grid-column: span 2;
+  }
+
+  /* Hero improvements */
+  .hero-actions {
+    flex-direction: row;
+  }
+
+  /* Why choose us section */
+  .why-choose-content {
+    grid-template-columns: 1fr;
+    gap: var(--space-12);
+  }
+
+  /* Stats cards */
+  .stats-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* Footer */
+  .footer-content {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .footer-bottom {
+    flex-direction: row;
+  }
+}
+
+/* ============================================
+   Large devices (1024px and up)
+   ============================================ */
+@media (min-width: 1024px) {
+  .container {
+    max-width: 960px;
+  }
+
+  /* Navigation - Desktop view */
+  .nav-toggle {
+    display: none;
+  }
+
+  .nav-menu {
+    position: static;
+    opacity: 1;
+    visibility: visible;
+    transform: none;
+    flex-direction: row;
+    padding: 0;
+    background: transparent;
+    box-shadow: none;
+  }
+
+  .nav-list {
+    flex-direction: row;
+  }
+
+  .nav-link {
+    border-bottom: none;
+    padding: 0;
+  }
+
+  .nav-actions {
+    flex-direction: row;
+    width: auto;
+  }
+
+  /* Services grid */
+  .services-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  /* Sectors grid */
+  .sectors-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  /* Projects grid */
+  .projects-grid {
+    grid-template-columns: 2fr 1fr 1fr;
+  }
+
+  .project-card.featured {
+    grid-column: span 1;
+    grid-row: span 2;
+  }
+
+  /* Why choose us - side by side */
+  .why-choose-content {
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-16);
+  }
+
+  .why-choose-text .section-title,
+  .why-choose-text .section-badge {
+    text-align: left;
+  }
+
+  /* Stats cards */
+  .stats-cards {
+    grid-template-columns: 1fr;
+  }
+
+  /* Partnership features */
+  .partnership-features {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  /* Footer - 4 columns */
+  .footer-content {
+    grid-template-columns: 1fr 1fr 1fr 1.5fr;
+  }
+
+  /* Hover effects */
+  .service-card:hover {
+    transform: translateY(-8px);
+  }
+
+  .sector-card:hover {
+    transform: translateY(-4px);
+  }
+
+  .project-card:hover {
+    transform: translateY(-4px);
+  }
+}
+
+/* ============================================
+   Extra large devices (1200px and up)
+   ============================================ */
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+
+  /* Hero spacing */
+  .hero {
+    padding: var(--space-24) 0;
+  }
+
+  /* Section spacing */
+  section {
+    padding: var(--space-24) 0;
+  }
+
+  /* Typography */
+  .hero-title {
+    font-size: 4rem;
+  }
+
+  .section-title {
+    font-size: var(--font-size-5xl);
+  }
+}
+
+/* ============================================
+   Extra extra large devices (1400px and up)
+   ============================================ */
+@media (min-width: 1400px) {
+  .container {
+    max-width: 1200px;
+  }
+
+  /* Enhanced spacing */
+  .hero {
+    padding: var(--space-32) 0;
+  }
+
+  section {
+    padding: var(--space-32) 0;
+  }
+
+  /* Services grid - 3 columns with better spacing */
+  .services-grid {
+    gap: var(--space-10);
+  }
+
+  /* Projects grid enhancement */
+  .projects-grid {
+    gap: var(--space-8);
+  }
+}
+
+/* ============================================
+   Print Styles
+   ============================================ */
+@media print {
+  /* Hide interactive elements */
+  .header,
+  .nav-toggle,
+  .scroll-indicator,
+  .back-to-top,
+  .btn,
+  .social-links,
+  .hero-actions,
+  .cta-actions,
+  .projects-cta,
+  .sectors-cta {
+    display: none !important;
+  }
+
+  /* Optimize for printing */
+  body {
+    font-size: 12pt;
+    line-height: 1.4;
+    color: #000;
+    background: #fff;
+  }
+
+  .hero {
+    background: #fff;
+    color: #000;
+    min-height: auto;
+    padding: 2rem 0;
+  }
+
+  .hero-title,
+  .section-title {
+    color: #000;
+    page-break-after: avoid;
+  }
+
+  .service-card,
+  .project-card,
+  .sector-card {
+    break-inside: avoid;
+    border: 1px solid #ddd;
+    margin-bottom: 1rem;
+  }
+
+  .footer {
+    background: #fff;
+    color: #000;
+    border-top: 1px solid #ddd;
+  }
+
+  @page {
+    margin: 0.5in;
+    size: A4;
+  }
+}
+
+/* ============================================
+   Accessibility and Motion
+   ============================================ */
+
+/* Reduce motion for users who prefer it */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+
+  .scroll-arrow {
+    animation: none;
+  }
+}
+
+/* High contrast mode */
+@media (prefers-contrast: high) {
+  .btn-primary {
+    border: 2px solid var(--white);
+  }
+
+  .btn-outline {
+    border: 2px solid var(--primary-blue);
+  }
+
+  .service-card,
+  .project-card,
+  .sector-card {
+    border: 2px solid var(--gray-300);
+  }
+}
+
+/* Dark mode preparation (if implemented later) */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --gray-50: #0f172a;
+    --gray-100: #1e293b;
+    --gray-900: #f8fafc;
+  }
+
+  [data-theme="auto"] {
+    /* Dark mode styles would go here */
+  }
+}
+
+/* ============================================
+   Mobile-specific optimizations
+   ============================================ */
+
+/* Landscape phones */
+@media (max-height: 500px) and (orientation: landscape) {
+  .hero {
+    min-height: 100vh;
+    padding: var(--space-8) 0;
+  }
+
+  .hero-title {
+    font-size: var(--font-size-3xl);
+  }
+
+  .hero-stats {
+    margin-bottom: var(--space-6);
+  }
+}
+
+/* Touch devices optimizations */
+@media (hover: none) and (pointer: coarse) {
+  /* Increase touch targets */
+  .btn {
+    min-height: 44px;
+    padding: var(--space-4) var(--space-6);
+  }
+
+  .nav-link {
+    padding: var(--space-4) 0;
+  }
+
+  .social-link {
+    width: 44px;
+    height: 44px;
+  }
+
+  /* Remove hover effects on touch devices */
+  .service-card:hover,
+  .project-card:hover,
+  .sector-card:hover {
+    transform: none;
+  }
+
+  .btn:hover {
+    transform: none;
+  }
+}
+
+/* Very small devices (320px and up) */
+@media (max-width: 359px) {
+  .container {
+    padding-left: var(--space-3);
+    padding-right: var(--space-3);
+  }
+
+  .hero-title {
+    font-size: var(--font-size-3xl);
+  }
+
+  .hero-subtitle {
+    font-size: var(--font-size-base);
+  }
+
+  .section-title {
+    font-size: var(--font-size-3xl);
+  }
+
+  .btn {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .hero-actions {
+    flex-direction: column;
+    gap: var(--space-3);
+  }
+
+  .hero-stats {
+    flex-direction: column;
+    gap: var(--space-4);
+  }
+
+  .partnership-logos {
+    flex-direction: column;
+    gap: var(--space-4);
+  }
+
+  .partnership-symbol {
+    display: none;
+  }
+}
+
+/* Form responsiveness */
+@media (max-width: 767px) {
+  .form-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .form-group {
+    margin-bottom: var(--space-4);
+  }
+
+  .form-input,
+  .form-textarea,
+  .form-select {
+    font-size: 16px; /* Prevents zoom on iOS */
+  }
+}
+
+/* Navigation improvements for tablets */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .nav-list {
+    gap: var(--space-4);
+  }
+
+  .nav-link {
+    font-size: var(--font-size-sm);
+  }
+
+  .btn {
+    padding: var(--space-2) var(--space-4);
+    font-size: var(--font-size-sm);
+  }
+}
+
+/* ============================================
+   Animation classes for scroll reveals
+   ============================================ */
+
+.animate-in {
+  animation: fadeInUp 0.6s ease-out forwards;
+}
+
+.animate-in:nth-child(1) {
+  animation-delay: 0ms;
+}
+.animate-in:nth-child(2) {
+  animation-delay: 100ms;
+}
+.animate-in:nth-child(3) {
+  animation-delay: 200ms;
+}
+.animate-in:nth-child(4) {
+  animation-delay: 300ms;
+}
+.animate-in:nth-child(5) {
+  animation-delay: 400ms;
+}
+.animate-in:nth-child(6) {
+  animation-delay: 500ms;
+}
+
+/* Loading states */
+.loading {
+  opacity: 0;
+}
+
+.loaded {
+  opacity: 1;
+  transition: opacity var(--transition-base);
+}
+
+/* Form message styles */
+.form-message {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  padding: var(--space-4);
+  border-radius: var(--radius-lg);
+  margin-bottom: var(--space-4);
+  font-weight: var(--font-weight-medium);
+}
+
+.form-message.success {
+  background: rgba(16, 185, 129, 0.1);
+  color: var(--success);
+  border: 1px solid rgba(16, 185, 129, 0.3);
+}
+
+.form-message.error {
+  background: rgba(239, 68, 68, 0.1);
+  color: var(--error);
+  border: 1px solid rgba(239, 68, 68, 0.3);
+}
+
+.field-error {
+  color: var(--error);
+  font-size: var(--font-size-sm);
+  margin-top: var(--space-1);
+}
+
+.form-input.error,
+.form-textarea.error,
+.form-select.error {
+  border-color: var(--error);
+  box-shadow: 0 0 0 3px rgba(239, 68, 68, 0.1);
+}
+
+/* Spinner animation */
+.spinner {
+  animation: spin 1s linear infinite;
+}
+
+.spinner .path {
+  stroke-dasharray: 90, 150;
+  stroke-dashoffset: 0;
+  stroke-linecap: round;
+  animation: dash 1.5s ease-in-out infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes dash {
+  0% {
+    stroke-dasharray: 1, 150;
+    stroke-dashoffset: 0;
+  }
+  50% {
+    stroke-dasharray: 90, 150;
+    stroke-dashoffset: -35;
+  }
+  100% {
+    stroke-dasharray: 90, 150;
+    stroke-dashoffset: -124;
+  }
+}

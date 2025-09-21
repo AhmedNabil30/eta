@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <rect width="1200" height="630" fill="#1e40af"/>
+  <text x="600" y="250" text-anchor="middle" fill="white" font-size="48" font-family="Arial" font-weight="bold">ETEAS ENERGY</text>
+  <text x="600" y="320" text-anchor="middle" fill="white" font-size="32" font-family="Arial">Renewable Energy Solutions</text>
+  <text x="600" y="380" text-anchor="middle" fill="white" font-size="24" font-family="Arial">Egypt's Leading Provider</text>
+  <circle cx="300" cy="450" r="50" fill="white" opacity="0.8"/>
+  <rect x="290" y="500" width="20" height="80" fill="white" opacity="0.8"/>
+  <circle cx="900" cy="450" r="50" fill="white" opacity="0.8"/>
+  <rect x="890" y="500" width="20" height="80" fill="white" opacity="0.8"/>
+</svg>

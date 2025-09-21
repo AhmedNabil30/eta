@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="300" viewBox="0 0 300 300">
+  <rect width="300" height="300" fill="#1e40af"/>
+  <circle cx="150" cy="120" r="40" fill="white" opacity="0.9"/>
+  <rect x="110" y="180" width="80" height="80" rx="40" fill="white" opacity="0.9"/>
+  <text x="150" y="260" text-anchor="middle" fill="white" font-size="18" font-family="Arial" font-weight="bold">Moustafa El-Rafei</text>
+  <text x="150" y="280" text-anchor="middle" fill="white" font-size="14" font-family="Arial">CEO &amp; Founder</text>
+</svg>

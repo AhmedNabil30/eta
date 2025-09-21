@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="300" viewBox="0 0 400 300">
+  <rect width="400" height="300" fill="#78716c"/>
+  <rect x="150" y="100" width="30" height="120" fill="#44403c"/>
+  <rect x="220" y="120" width="30" height="100" fill="#44403c"/>
+  <circle cx="165" cy="90" r="15" fill="#f59e0b"/>
+  <circle cx="235" cy="110" r="15" fill="#f59e0b"/>
+  <text x="200" y="250" text-anchor="middle" fill="white" font-size="24" font-family="Arial">Oil &amp; Gas</text>
+  <text x="200" y="280" text-anchor="middle" fill="white" font-size="14" font-family="Arial">Placeholder Image</text>
+</svg>

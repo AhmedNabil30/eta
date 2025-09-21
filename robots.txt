@@ -1,0 +1,14 @@
+User-agent: *
+Disallow: /admin/
+Disallow: /assets/css/
+Disallow: /assets/js/
+Disallow: /.htaccess
+Disallow: /thank-you.html
+Allow: /assets/images/
+Allow: /
+
+# XML Sitemap
+Sitemap: https://www.eteasenergy.com/sitemap.xml
+
+# Crawl-delay for respectful crawling
+Crawl-delay: 1
