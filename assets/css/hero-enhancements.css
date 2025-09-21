@@ -308,6 +308,50 @@
   opacity: 0.8;
 }
 
+/* Sector Placeholder Styling */
+.sector-placeholder {
+  width: 100%;
+  height: 200px;
+  background: linear-gradient(135deg, #1e3a8a, #3b82f6);
+  border-radius: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  transition: all 0.3s ease;
+}
+
+.sector-placeholder svg {
+  opacity: 0.9;
+}
+
+.sector-card:hover .sector-placeholder {
+  background: linear-gradient(135deg, #3b82f6, #06b6d4);
+  transform: scale(1.02);
+}
+
+/* Project Placeholder Styling */
+.project-placeholder {
+  width: 100%;
+  height: 250px;
+  background: linear-gradient(135deg, #1e3a8a, #3b82f6);
+  border-radius: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  transition: all 0.3s ease;
+}
+
+.project-placeholder svg {
+  opacity: 0.9;
+}
+
+.project-card:hover .project-placeholder {
+  background: linear-gradient(135deg, #3b82f6, #06b6d4);
+  transform: scale(1.02);
+}
+
 /* Print Styles */
 @media print {
   .page-header {
