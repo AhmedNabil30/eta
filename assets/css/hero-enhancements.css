@@ -352,6 +352,34 @@
   transform: scale(1.02);
 }
 
+/* Logo Placeholder Styling */
+.logo-placeholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 0.5rem;
+  padding: 1rem;
+  transition: all 0.3s ease;
+}
+
+.logo-placeholder:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+/* Ensure partnership section has proper background */
+.partnership {
+  background: linear-gradient(135deg, #1e3a8a, #3b82f6) !important;
+  color: white !important;
+}
+
+/* Ensure CTA section has proper background */
+.cta {
+  background: linear-gradient(135deg, #3b82f6, #06b6d4) !important;
+  color: white !important;
+}
+
 /* Print Styles */
 @media print {
   .page-header {
