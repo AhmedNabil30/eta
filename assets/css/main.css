@@ -128,7 +128,11 @@ body {
   font-family: var(--font-family-base);
   font-weight: var(--font-weight-normal);
   color: var(--primary-blue);
-  background: linear-gradient(135deg, var(--primary-blue) 0%, var(--secondary-blue) 100%);
+  background: linear-gradient(
+    135deg,
+    var(--primary-blue) 0%,
+    var(--secondary-blue) 100%
+  );
   padding-top: 70px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -753,6 +757,7 @@ section {
 
 .services-overview {
   background: var(--gray-50);
+  color: var(--primary-blue);
 }
 
 .services-grid {
@@ -1554,7 +1559,11 @@ section {
    ============================================ */
 
 .page-header {
-  background: linear-gradient(135deg, var(--primary-blue) 0%, var(--secondary-blue) 100%);
+  background: linear-gradient(
+    135deg,
+    var(--primary-blue) 0%,
+    var(--secondary-blue) 100%
+  );
   color: var(--white);
   padding: var(--space-24) 0 var(--space-16);
   margin-top: 80px;
@@ -1958,7 +1967,11 @@ section:nth-child(even)::before {
 /* Commitment Section */
 .our-commitment {
   padding: var(--space-20) 0;
-  background: linear-gradient(135deg, var(--primary-blue), var(--secondary-blue));
+  background: linear-gradient(
+    135deg,
+    var(--primary-blue),
+    var(--secondary-blue)
+  );
   color: var(--white);
 }
 
@@ -2108,7 +2121,11 @@ section:nth-child(even)::before {
 
 .service-item.featured {
   border: 2px solid var(--secondary-blue);
-  background: linear-gradient(135deg, rgba(59, 130, 246, 0.02), rgba(6, 182, 212, 0.02));
+  background: linear-gradient(
+    135deg,
+    rgba(59, 130, 246, 0.02),
+    rgba(6, 182, 212, 0.02)
+  );
 }
 
 .service-image {
@@ -2238,7 +2255,11 @@ section:nth-child(even)::before {
 .process-step .step-number {
   width: 80px;
   height: 80px;
-  background: linear-gradient(135deg, var(--primary-blue), var(--secondary-blue));
+  background: linear-gradient(
+    135deg,
+    var(--primary-blue),
+    var(--secondary-blue)
+  );
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -2299,7 +2320,11 @@ section:nth-child(even)::before {
 /* Service Guarantees Section */
 .service-guarantees {
   padding: var(--space-20) 0;
-  background: linear-gradient(135deg, var(--primary-blue), var(--secondary-blue));
+  background: linear-gradient(
+    135deg,
+    var(--primary-blue),
+    var(--secondary-blue)
+  );
   color: var(--white);
 }
 
@@ -2457,7 +2482,11 @@ section:nth-child(even)::before {
 
 .category-card.active {
   border-color: var(--secondary-blue);
-  background: linear-gradient(135deg, rgba(59, 130, 246, 0.05), rgba(6, 182, 212, 0.05));
+  background: linear-gradient(
+    135deg,
+    rgba(59, 130, 246, 0.05),
+    rgba(6, 182, 212, 0.05)
+  );
 }
 
 .category-icon {
@@ -2696,7 +2725,11 @@ section:nth-child(even)::before {
 }
 
 .comparison-table th {
-  background: linear-gradient(135deg, var(--primary-blue), var(--secondary-blue));
+  background: linear-gradient(
+    135deg,
+    var(--primary-blue),
+    var(--secondary-blue)
+  );
   color: var(--white);
   padding: var(--space-4);
   text-align: left;
@@ -2759,7 +2792,11 @@ section:nth-child(even)::before {
 
 /* Energy Calculator */
 .energy-calculator {
-  background: linear-gradient(135deg, var(--primary-blue), var(--secondary-blue));
+  background: linear-gradient(
+    135deg,
+    var(--primary-blue),
+    var(--secondary-blue)
+  );
   color: var(--white);
   padding: var(--space-8);
   border-radius: var(--radius-2xl);
@@ -2885,7 +2922,11 @@ section:nth-child(even)::before {
 /* Project Stats Section */
 .project-stats {
   padding: var(--space-20) 0;
-  background: linear-gradient(135deg, var(--primary-blue), var(--secondary-blue));
+  background: linear-gradient(
+    135deg,
+    var(--primary-blue),
+    var(--secondary-blue)
+  );
   color: var(--white);
 }
 
@@ -3141,14 +3182,16 @@ section:nth-child(even)::before {
 }
 
 .testimonial-quote::before {
-  content: """;
+  content: ""
+    ";
   font-size: var(--font-size-3xl);
   color: var(--secondary-blue);
   line-height: 1;
 }
 
 .testimonial-quote::after {
-  content: """;
+  content: "
+    "";
   font-size: var(--font-size-3xl);
   color: var(--secondary-blue);
   line-height: 1;
@@ -3179,7 +3222,11 @@ section:nth-child(even)::before {
   top: 0;
   bottom: 0;
   width: 2px;
-  background: linear-gradient(180deg, var(--secondary-blue), var(--accent-blue));
+  background: linear-gradient(
+    180deg,
+    var(--secondary-blue),
+    var(--accent-blue)
+  );
 }
 
 .timeline-item {
