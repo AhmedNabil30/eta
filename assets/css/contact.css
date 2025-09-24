@@ -4,7 +4,11 @@
 
 /* Page Header */
 .page-header {
-  background: linear-gradient(135deg, var(--primary-blue) 0%, var(--secondary-blue) 100%);
+  background: linear-gradient(
+    135deg,
+    var(--primary-blue) 0%,
+    var(--secondary-blue) 100%
+  );
   color: var(--white);
   padding: var(--space-24) 0 var(--space-16);
   margin-top: 80px; /* Account for fixed header */
@@ -14,6 +18,9 @@
   text-align: center;
   max-width: 800px;
   margin: 0 auto;
+}
+.x {
+  color: white;
 }
 
 .page-title {
