@@ -87,6 +87,23 @@
   position: relative;
   overflow: hidden;
 }
+.partener {
+  display: flex;
+}
+.partnership-logos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.partnership-logo {
+  height: 210px;
+  width: auto;
+  max-width: 210px;
+  object-fit: contain;
+}
 
 .overview-visual::before {
   content: "";
@@ -187,12 +204,20 @@
 }
 
 .mission-card {
-  background: linear-gradient(135deg, var(--primary-blue) 0%, var(--secondary-blue) 100%);
+  background: linear-gradient(
+    135deg,
+    var(--primary-blue) 0%,
+    var(--secondary-blue) 100%
+  );
   color: var(--white);
 }
 
 .vision-card {
-  background: linear-gradient(135deg, var(--secondary-blue) 0%, var(--accent-blue) 100%);
+  background: linear-gradient(
+    135deg,
+    var(--secondary-blue) 0%,
+    var(--accent-blue) 100%
+  );
   color: var(--white);
 }
 
@@ -245,7 +270,11 @@
   height: 120px;
   border-radius: 50%;
   margin: 0 auto var(--space-6);
-  background: linear-gradient(135deg, var(--secondary-blue), var(--accent-blue));
+  background: linear-gradient(
+    135deg,
+    var(--secondary-blue),
+    var(--accent-blue)
+  );
   display: flex;
   align-items: center;
   justify-content: center;
@@ -304,7 +333,11 @@
   width: 80px;
   height: 80px;
   margin: 0 auto var(--space-6);
-  background: linear-gradient(135deg, var(--secondary-blue), var(--accent-blue));
+  background: linear-gradient(
+    135deg,
+    var(--secondary-blue),
+    var(--accent-blue)
+  );
   border-radius: var(--radius-2xl);
   display: flex;
   align-items: center;
@@ -327,7 +360,11 @@
 /* CTA Section */
 .about-cta {
   padding: var(--space-20) 0;
-  background: linear-gradient(135deg, var(--primary-blue) 0%, var(--secondary-blue) 100%);
+  background: linear-gradient(
+    135deg,
+    var(--primary-blue) 0%,
+    var(--secondary-blue) 100%
+  );
   color: var(--white);
   text-align: center;
 }

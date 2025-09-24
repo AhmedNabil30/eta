@@ -569,6 +569,9 @@
 .spinner {
   animation: spin 1s linear infinite;
 }
+.text {
+  color: var(--primary-blue) !important;
+}
 
 .spinner .path {
   stroke-dasharray: 90, 150;

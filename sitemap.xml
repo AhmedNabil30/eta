@@ -12,24 +12,24 @@
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-  <url>
+  <!-- <url>
     <loc>https://www.eteasenergy.com/services.html</loc>
     <lastmod>2023-12-01T12:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
-  </url>
-  <url>
+  </url> -->
+  <!-- <url>
     <loc>https://www.eteasenergy.com/products.html</loc>
     <lastmod>2023-12-01T12:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
-  </url>
-  <url>
+  </url> -->
+  <!-- <url>
     <loc>https://www.eteasenergy.com/projects.html</loc>
     <lastmod>2023-12-01T12:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
-  </url>
+  </url> -->
   <url>
     <loc>https://www.eteasenergy.com/contact.html</loc>
     <lastmod>2023-12-01T12:00:00+00:00</lastmod>

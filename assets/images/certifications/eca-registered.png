@@ -1,7 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="150" height="80" viewBox="0 0 150 80">
-  <rect width="150" height="80" fill="white" stroke="#dc2626" stroke-width="2"/>
-  <text x="75" y="25" text-anchor="middle" fill="#dc2626" font-size="14" font-family="Arial" font-weight="bold">ECA</text>
-  <text x="75" y="40" text-anchor="middle" fill="#dc2626" font-size="10" font-family="Arial">Registered</text>
-  <text x="75" y="52" text-anchor="middle" fill="#dc2626" font-size="10" font-family="Arial">Contractor</text>
-  <text x="75" y="65" text-anchor="middle" fill="#64748b" font-size="8" font-family="Arial">Egyptian Contractors Association</text>
-</svg>
