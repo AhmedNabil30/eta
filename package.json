@@ -7,7 +7,7 @@
     "build": "npm run build:css && npm run build:js",
     "build:css": "postcss assets/css/main.css -o assets/css/main.min.css --map",
     "build:js": "uglifyjs assets/js/main.js -o assets/js/main.min.js --source-map",
-    "serve": "python3 -m http.server 8000",
+    "serve": "npx http-server . -p 8000",
     "test": "lighthouse http://localhost:8000 --output=html --output-path=./lighthouse-report.html",
     "validate": "html-validate *.html",
     "optimize": "imagemin assets/images/**/* --out-dir=assets/images/optimized/"
@@ -35,4 +35,3 @@
     "uglify-js": "^3.17.4"
   }
 }
-

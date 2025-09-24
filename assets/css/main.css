@@ -293,21 +293,13 @@ strong {
 }
 
 .btn-primary {
-  background: linear-gradient(
-    135deg,
-    var(--primary-blue) 0%,
-    var(--secondary-blue) 100%
-  );
+  background: var(--primary-blue);
   color: var(--white);
   border-color: var(--primary-blue);
 }
 
 .btn-primary:hover {
-  background: linear-gradient(
-    135deg,
-    var(--dark-blue) 0%,
-    var(--primary-blue) 100%
-  );
+  background: var(--dark-blue);
   transform: translateY(-1px);
   box-shadow: var(--shadow-lg);
 }
@@ -562,11 +554,11 @@ strong {
 
 .hero {
   position: relative;
-  min-height: 100vh;
+  min-height: 90vh;
   display: flex;
   align-items: center;
   overflow: hidden;
-  background: linear-gradient(135deg, var(--primary-blue) 0%, var(--secondary-blue) 50%, var(--accent-blue) 100%);
+  background: var(--gray-50);
 }
 
 .hero-background {
@@ -579,17 +571,7 @@ strong {
 }
 
 .hero-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(135deg,
-    rgba(30, 58, 138, 0.8) 0%,
-    rgba(59, 130, 246, 0.7) 50%,
-    rgba(6, 182, 212, 0.8) 100%
-  );
-  z-index: 2;
+  display: none;
 }
 
 .hero-bg-image {
@@ -609,7 +591,7 @@ strong {
   max-width: 800px;
   margin: 0 auto;
   text-align: center;
-  color: var(--white);
+  color: var(--gray-900);
 }
 
 .hero-title {
@@ -617,22 +599,19 @@ strong {
   font-weight: var(--font-weight-bold);
   line-height: var(--line-height-tight);
   margin-bottom: var(--space-6);
-  animation: fadeInUp 1s ease-out;
+  color: var(--primary-blue);
 }
 
 .hero-title .highlight {
-  background: linear-gradient(135deg, var(--accent-blue), var(--white));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  color: var(--accent-blue);
 }
 
 .hero-subtitle {
   font-size: var(--font-size-xl);
   line-height: var(--line-height-relaxed);
   margin-bottom: var(--space-10);
-  opacity: 0.95;
-  animation: fadeInUp 1s ease-out 0.2s both;
+  opacity: 0.8;
+  color: var(--gray-700);
 }
 
 .hero-stats {
@@ -640,7 +619,6 @@ strong {
   justify-content: center;
   gap: var(--space-8);
   margin-bottom: var(--space-10);
-  animation: fadeInUp 1s ease-out 0.4s both;
 }
 
 .stat-item {
@@ -666,7 +644,6 @@ strong {
   justify-content: center;
   gap: var(--space-4);
   flex-wrap: wrap;
-  animation: fadeInUp 1s ease-out 0.6s both;
 }
 
 .scroll-indicator {
@@ -689,7 +666,6 @@ strong {
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
   transition: all var(--transition-base);
-  animation: bounce 2s infinite;
 }
 
 .scroll-arrow:hover {
