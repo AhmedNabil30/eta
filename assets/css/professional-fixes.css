@@ -126,41 +126,7 @@
   color: white;
 }
 
-/* Button Enhancements */
-.btn {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  gap: 0.5rem;
-  padding: 0.75rem 1.5rem;
-  border-radius: 0.5rem;
-  font-weight: 500;
-  text-decoration: none;
-  border: none;
-  cursor: pointer;
-  transition: all 0.2s ease;
-  font-size: 0.875rem;
-  line-height: 1.25rem;
-  white-space: nowrap;
-}
-
-.btn-primary {
-  background: linear-gradient(135deg, var(--secondary-blue, #3b82f6), var(--accent-blue, #06b6d4));
-  color: white;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
-}
-
-.btn-primary:hover {
-  background: linear-gradient(135deg, var(--primary-blue, #1e3a8a), var(--secondary-blue, #3b82f6));
-  transform: translateY(-1px);
-  box-shadow: 0 4px 12px rgba(59, 130, 246, 0.4);
-}
-
-.btn-outline {
-  background: transparent;
-  color: var(--secondary-blue, #3b82f6);
-  border: 1px solid var(--secondary-blue, #3b82f6);
-}
+/* Button styles removed - using centralized definitions from main.css */
 
 .btn-outline:hover {
   background: var(--secondary-blue, #3b82f6);

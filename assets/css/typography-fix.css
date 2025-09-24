@@ -106,29 +106,7 @@ a:hover {
   text-decoration: underline;
 }
 
-/* Button Enhancement */
-.btn {
-  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-  font-weight: 500;
-  letter-spacing: -0.01em;
-  text-decoration: none;
-  border: none;
-  cursor: pointer;
-  transition: all 0.2s ease;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  white-space: nowrap;
-}
-
-.btn:hover {
-  text-decoration: none;
-  transform: translateY(-1px);
-}
-
-.btn:active {
-  transform: translateY(0);
-}
+/* Button typography handled by main.css */
 
 /* Focus Enhancement for Accessibility */
 *:focus {
