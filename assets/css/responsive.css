@@ -405,6 +405,10 @@
 
 /* Very small devices (320px and up) */
 @media (max-width: 359px) {
+  body {
+    padding-top: 60px;
+  }
+
   .container {
     padding-left: var(--space-3);
     padding-right: var(--space-3);
@@ -449,6 +453,14 @@
 
 /* Form responsiveness */
 @media (max-width: 767px) {
+  body {
+    padding-top: 65px;
+  }
+
+  .hero {
+    min-height: 80vh;
+  }
+
   .form-grid {
     grid-template-columns: 1fr;
   }
