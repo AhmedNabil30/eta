@@ -759,7 +759,7 @@ section {
   background: var(--gray-50);
   color: var(--primary-blue);
 }
-.text{
+.text {
   color: var(--primary-blue) !important;
 }
 
@@ -3393,5 +3393,218 @@ section:nth-child(even)::before {
 
   @page {
     margin: 0.5in;
+  }
+}
+.hero-industrial {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  background: linear-gradient(135deg, #1a237e 0%, #3949ab 50%, #5c6bc0 100%);
+}
+
+.hero-background-industrial {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.hero-texture-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="industrial-grid" width="20" height="20" patternUnits="userSpaceOnUse"><path d="M 20 0 L 0 0 0 20" fill="none" stroke="rgba(255,255,255,0.05)" stroke-width="1"/></pattern></defs><rect width="100" height="100" fill="url(%23industrial-grid)"/></svg>');
+  opacity: 0.3;
+}
+
+.hero-gradient-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(
+    ellipse at center right,
+    rgba(99, 102, 241, 0.2) 0%,
+    transparent 70%
+  );
+}
+
+.hero-industrial-content {
+  position: relative;
+  z-index: 3;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-16);
+  align-items: center;
+  min-height: 80vh;
+}
+
+.hero-left-content {
+  color: var(--white);
+  padding-right: var(--space-8);
+}
+
+.hero-year {
+  font-size: 8rem;
+  font-weight: var(--font-weight-bold);
+  color: rgba(255, 255, 255, 0.1);
+  line-height: 0.8;
+  margin-bottom: var(--space-4);
+  position: absolute;
+  top: -2rem;
+  left: -1rem;
+  z-index: -1;
+}
+
+.hero-industrial-title {
+  font-size: var(--font-size-4xl);
+  font-weight: var(--font-weight-bold);
+  line-height: var(--line-height-tight);
+  margin-bottom: var(--space-8);
+  color: var(--white);
+  position: relative;
+  z-index: 2;
+}
+
+.hero-company-details {
+  display: flex;
+  gap: var(--space-6);
+  margin-bottom: var(--space-8);
+}
+
+.company-registration {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+}
+
+.reg-label {
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-medium);
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.reg-number {
+  font-size: var(--font-size-base);
+  font-weight: var(--font-weight-bold);
+  color: var(--white);
+}
+
+.hero-vision-text {
+  font-size: var(--font-size-base);
+  line-height: var(--line-height-relaxed);
+  color: rgba(255, 255, 255, 0.9);
+  max-width: 500px;
+}
+
+.hero-right-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.hero-turbine-container {
+  position: relative;
+  width: 100%;
+  max-width: 400px;
+  margin-bottom: var(--space-8);
+}
+
+.hero-turbine-image {
+  width: 100%;
+  height: auto;
+  filter: drop-shadow(0 10px 30px rgba(0, 0, 0, 0.3));
+  animation: gentle-float 6s ease-in-out infinite;
+}
+
+.turbine-specs {
+  position: absolute;
+  bottom: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  padding: var(--space-2) var(--space-4);
+  border-radius: var(--radius-full);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.turbine-label {
+  color: var(--white);
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-semibold);
+  text-align: center;
+}
+
+.hero-logo-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hero-company-logo {
+  height: 80px;
+  width: auto;
+  filter: brightness(0) invert(1);
+}
+
+@keyframes gentle-float {
+  0%,
+  100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  33% {
+    transform: translateY(-10px) rotate(1deg);
+  }
+  66% {
+    transform: translateY(5px) rotate(-1deg);
+  }
+}
+
+/* Responsive adjustments */
+@media (max-width: 1023px) {
+  .hero-industrial-content {
+    grid-template-columns: 1fr;
+    gap: var(--space-12);
+    text-align: center;
+  }
+
+  .hero-left-content {
+    padding-right: 0;
+  }
+
+  .hero-year {
+    position: relative;
+    top: 0;
+    left: 0;
+    font-size: 6rem;
+    margin-bottom: var(--space-6);
+  }
+
+  .hero-industrial-title {
+    font-size: var(--font-size-3xl);
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-year {
+    font-size: 4rem;
+  }
+
+  .hero-industrial-title {
+    font-size: var(--font-size-2xl);
+  }
+
+  .hero-company-details {
+    justify-content: center;
   }
 }
