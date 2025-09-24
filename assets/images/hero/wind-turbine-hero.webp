@@ -1,8 +1,0 @@
-<!-- This is a placeholder - you should replace with an actual image -->
-<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080">
-  <rect width="1920" height="1080" fill="#1e3a8a"/>
-  <circle cx="960" cy="540" r="100" fill="white" opacity="0.8"/>
-  <rect x="950" y="640" width="20" height="200" fill="white" opacity="0.8"/>
-  <text x="960" y="900" text-anchor="middle" fill="white" font-size="36" font-family="Arial">Wind Turbine Hero Image</text>
-  <text x="960" y="950" text-anchor="middle" fill="white" font-size="24" font-family="Arial">Placeholder - Replace with actual photo</text>
-</svg>
