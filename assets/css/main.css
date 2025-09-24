@@ -759,6 +759,9 @@ section {
   background: var(--gray-50);
   color: var(--primary-blue);
 }
+.text{
+  color: var(--primary-blue) !important;
+}
 
 .services-grid {
   display: grid;
