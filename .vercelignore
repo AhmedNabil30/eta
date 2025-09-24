@@ -1,0 +1,5 @@
+node_modules
+.git
+lighthouse-report.html
+*.log
+.DS_Store
