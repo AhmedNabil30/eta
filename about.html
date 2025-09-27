@@ -35,7 +35,7 @@
   <body>
     <!-- Header -->
     <header class="header" id="header">
-      <nav class="navbar" role="navigation" aria-label="Main navigation">
+      <nav class="navbar" aria-label="Main navigation">
         <div class="container">
           <div class="nav-brand">
             <a
@@ -44,13 +44,14 @@
               aria-label="ETEAS Energy Homepage"
             >
               <img
-                src="assets/images/logo/eteas-logo.svg"
+                src="assets/images/logo/eteas-logo.png"
                 alt="ETEAS Energy Logo"
                 width="150"
                 height="60"
               />
             </a>
             <button
+              type="button"
               class="nav-toggle"
               id="navToggle"
               aria-label="Toggle navigation menu"
@@ -69,8 +70,12 @@
 
             <div class="nav-actions">
               <div class="language-switcher">
-                <button class="lang-btn active" data-lang="en">EN</button>
-                <button class="lang-btn" data-lang="ar">AR</button>
+                <button type="button" class="lang-btn active" data-lang="en">
+                  EN
+                </button>
+                <button type="button" class="lang-btn" data-lang="ar">
+                  AR
+                </button>
               </div>
               <a href="contact.html" class="btn btn-primary">Get Quote</a>
             </div>
@@ -768,6 +773,7 @@
 
     <!-- Scripts -->
     <script src="assets/js/main.js"></script>
+    <script src="assets/js/animations.js?v=2"></script>
     <script src="assets/js/about.js"></script>
   </body>
 </html>
