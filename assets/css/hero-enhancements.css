@@ -6,11 +6,16 @@
 /* Enhanced Hero Section with Background Image */
 .hero-with-image {
   position: relative;
+  color: var(--white);
+}
+
+/* Desktop Hero */
+.hero-desktop {
+  position: relative;
   min-height: 100vh;
   display: flex;
   align-items: center;
   overflow: hidden;
-  color: var(--white);
 }
 
 .hero-background-image {
@@ -36,13 +41,36 @@
   z-index: 2;
 }
 
-.hero-content {
-  position: relative;
-  z-index: 3;
-  text-align: center;
-  max-width: 900px;
-  margin: 0 auto;
-  padding: 2rem 0;
+/* Mobile Hero */
+.hero-mobile {
+  display: none;
+  margin: 0;
+  padding: 0;
+  line-height: 0;
+}
+
+.mobile-hero-image {
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: block;
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+}
+
+.mobile-hero-1 {
+  height: 50vh;
+  background-image: url('../images/hero/mobile2 (1).png');
+  margin-bottom: 0;
+}
+
+.mobile-hero-2 {
+  height: 50vh;
+  background-image: url('../images/hero/mobile2 (2).png');
+  margin-top: 0;
 }
 
 .hero-title {
@@ -297,14 +325,39 @@
 
 /* Responsive Design */
 @media (max-width: 768px) {
-  .hero-with-image {
-    min-height: 60vh;
+  /* Hide desktop hero, show mobile hero */
+  .hero-desktop {
+    display: none;
   }
 
-  .hero-background-image {
-    background-position: center center;
-    background-size: contain;
-    background-color: #1e3a8a;
+  .hero-mobile {
+    display: block;
+    margin: 0;
+    padding: 0;
+    line-height: 0;
+  }
+
+  .mobile-hero-image {
+    background-size: cover;
+    background-position: center;
+    display: block;
+    margin: 0;
+    padding: 0;
+    vertical-align: top;
+  }
+
+  .mobile-hero-1 {
+    height: 50vh;
+    min-height: 300px;
+    margin: 0;
+    padding: 0;
+  }
+
+  .mobile-hero-2 {
+    height: 50vh;
+    min-height: 300px;
+    margin: 0;
+    padding: 0;
   }
 
   .page-header {
@@ -343,15 +396,12 @@
 }
 
 @media (max-width: 480px) {
-  .hero-with-image {
-    min-height: 50vh;
+  .mobile-hero-1,
+  .mobile-hero-2 {
+    height: 45vh;
+    min-height: 250px;
   }
-
-  .hero-background-image {
-    background-size: contain;
-    background-position: center center;
-    background-color: #1e3a8a;
-  }
+}
 
   .page-header {
     padding: 5rem 0 2rem;
